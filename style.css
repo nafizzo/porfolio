@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Saira+Condensed:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: lightgray;
+    font-family: 'Saira Condensed', sans-serif;
+}
+#navbar{
+    background-color: #8a2be2;
+    font-size: 1.5em;
+    width: 100vw;
+    height: max-content;
+    position:fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+#nav-items{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+}
+#nav-items a{
+    text-decoration: none;
+    padding:  5px 10px;
+    margin:  5px 5vw;
+    border-radius: 5px;
+    background:  #201d3d;
+    color: #cbffd6;
+}
+#nav-items a:hover{
+    color:  #201d3d;
+    background-color: #FEF7FF;
+    transition: 400ms;
+    font-weight: bold;
+}
+#ham{
+    display: none;
+    position: fixed;
+    right: 1rem;
+    top: 0.75rem;
+    padding: 5px;
+    margin: 0;
+}
+#welcome-section{
+    color: #fff6ff;
+    font-size: 2em;
+    background-color:#BEA0D3;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin:0;
+    padding-block: 20%;
+    height: 100vh;
+    transition: 0.4s;
+}
+#welcome-section h1{
+    color: #201d3d;
+    font-family: 'Abril Fatface';
+    text-transform: uppercase;
+}
+#projects{
+    height: max-content;
+    max-width: 100%;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    background-color:#61BAAD;
+}
+
+.project-tile{
+    margin: 20px;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #3A2A46;
+    color: #cbffd6;
+    font-family: 'Source Code Pro', monospace;
+}
+.project-tile img{
+    width:200px;
+    padding-bottom: 10px;
+
+}
+.project-tile:hover{
+    transform: scale(1.1);
+    transition: ease-out 0.3s;
+}
+figcaption{
+    text-align: center;
+}
+#contact{
+    text-align: center;
+    margin-block: 30px;
+}
+#contact-links{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+}
+.link{
+    transform: scale(2.5);
+    color: black;
+    padding: 10px;
+    margin: 4vw;
+}
+.link:hover{
+    transform:scale(2);
+    transition: 200ms;
+
+}
+@media (max-width:450px) {
+   #navbar{
+    display: none;
+     width: 100%;
+     height:150px;
+     justify-content: center;
+    background-color:black;
+   }
+   #nav-items{
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       padding: 0;
+       margin: 0;
+       width: 100%;
+   }
+   #nav-items a{
+        background-color: black;
+        padding-inline: 20px;
+        margin: 0;
+   }
+   .nav-links{
+       margin-top: 10px;
+   }
+  
+   #ham{
+       position: fixed;
+       display: flex;
+       z-index: 10;
+   }
+}
